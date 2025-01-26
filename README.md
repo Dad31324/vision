@@ -1,4 +1,5 @@
 Richmond Hill Robotics Team
+FRC Team 9086
 
 This repository has code framework for a vision processing system essential to autonomous mode.
 The implementation is envisioned to run with three disparate cameras on a Raspberry Pi.
@@ -22,5 +23,10 @@ Software Components:
     - camera_calibration.py       Process a library of image files and write calibration data
     - fieldmap.json               JSON file with april tag IDs, field coordinates and unit normals
     - manager_v3.py               Fully functional vision code: acquisition, detection, localization, logging
+
+Wish List:
+    - Connect the IO to real time memory tables or network tables for automation
+    - Implement a voting scheme to decide best real time lcoation from multiple cameras with multiple tags each
+    - Optimize camera settings (resolution, localization parameters, rame rate)
 
 Revision Log:
