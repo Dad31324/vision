@@ -320,7 +320,7 @@ def localizer(at_queue_out, logger_queue_out, messenger_queue_in2, camera_name, 
                 try:
                     index = tag_ids.index(tags[ii].tag_id)
                     xyz_tag = field_map_data['tags'][index]['xyz']
-                    theta = tag_theta[index]
+                    theta = -1 * tag_theta[index]
                 except ValueError:
                     theta = 0
                     xyz_tag = [0.0, 0.0, 0.0]
@@ -474,13 +474,13 @@ if __name__ == "__main__":
 
     # Other constants
     # ------------------------------------------
-    number_of_cameras = 3
+    number_of_cameras = 2
     tag_size = 0.08573    # from outer perimeter to outer perimeter divided by two
     rate1 = 0.050         # clock rate for taking images
-    rate2 = 0.005        # sleeper for april tag detection
+    rate2 = 0.005         # sleeper for april tag detection
     rate3 = 0.005         # sleeper for localizer
     duration = 5          # vision processing duration in seconds
-    frames = 100       # number of camera frames to process at rate1.
+    frames = 10           # number of camera frames to process at rate1.
 
     # Initialize the producer loop which keeps all cameras in synch
     # --------------------------------------------
