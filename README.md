@@ -4,7 +4,7 @@ FRC Team 9086
 This repository has code framework for a vision processing system essential to autonomous mode.
 The implementation is envisioned to run with three disparate cameras on a Raspberry Pi.
 
-Technical Requirements:
+Technical Objectives:
    - Three cameras of disparate make, model, features and potentially frame rate
    - Producer Consumer template in python for true multiprocessing
    - Producer is a "metronome" timer app for camera synchronization
@@ -24,6 +24,23 @@ Software Components:
     - fieldmap.json               JSON file with april tag IDs, field coordinates and unit normals
     - manager_v3.py               Fully functional vision code: acquisition, detection, localization, logging
 
+Hardware:
+    - Raspberry Pi 5 with 8GB RAM, HDMI output, WiFi 802.11ac Bluetooth
+    - 4 core ARM.  2.4 GHz (Cortex A7)
+    - 2 USB 2.0
+    - 2 USB 3.0
+    - 256 GB NVMe SSD
+
+Python Installation:
+    - PyCharm Community Edition IDE
+    - Python 3.12.4
+    - pyapriltags
+    - numpy
+    - pandas
+    - opencv-python
+    - python-csv
+    - TIME-python
+    - 
 Wish List:
     - Connect the IO to real time memory tables or network tables for automation
     - Implement a voting scheme to decide best real time lcoation from multiple cameras with multiple tags each
