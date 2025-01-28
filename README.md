@@ -16,7 +16,7 @@ Technical Objectives:
    - Frame rate processing in the real time loop targeting 50 mSec (100mSec fallback)
    - Localization accuracy in the real time loop targeting 2" at 3 feet.
    - No memory leaks.  No accumulated lag.
-   - Expected duration within 0.1 sec of expected duration after 2000 camera acquisitions
+   - Expected duration within 0.1 sec of measured real time loop duration after 2000 camera acquisitions
 
 Software Components:
     - camera_port_scanner.py      Auto detect cameras and their usb ports
@@ -36,7 +36,6 @@ Python Installation:
     - Python 3.12.4
     - pyapriltags
     - numpy
-    - pandas
     - opencv-python
     - python-csv
     - TIME-python
